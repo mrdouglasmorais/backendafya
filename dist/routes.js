@@ -8,6 +8,10 @@ var _auth = require('./app/middlewares/auth'); var _auth2 = _interopRequireDefau
 const routes = new (0, _express.Router)();
 
 
+routes.get('/', (req, res) => {
+  res.json({ message: 'Okay' })
+})
+
 // Criar usuário
 routes.post('/users', _UserController2.default.store)
 

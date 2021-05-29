@@ -15,6 +15,7 @@ exports. default = async (req, res, next) => {
 
 
   try {
+    
     const decoded = await _util.promisify.call(void 0, _jsonwebtoken2.default.verify)(token, _auth2.default.secret);
     req.userId = decoded.id;
     next();

@@ -8,6 +8,10 @@ import authMiddleware from './app/middlewares/auth';
 const routes = new Router();
 
 
+routes.get('/', (req, res) => {
+  res.json({ message: 'Okay' })
+})
+
 // Criar usuário
 routes.post('/users', UserController.store)
 

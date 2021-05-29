@@ -2,4 +2,4 @@
 var _express = require('express'); var _express2 = _interopRequireDefault(_express);
 
 _app2.default.use(_express2.default.json())
-_app2.default.listen(8888);
+_app2.default.listen(3000);
