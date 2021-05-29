@@ -2,6 +2,7 @@ import { Router } from 'express';
 
 import UserController from './app/controller/UserController';
 import SessionController from './app/controller/SessionController';
+import NotificationsController from './app/controller/NotificationsController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -24,5 +25,9 @@ routes.use(authMiddleware)
 
 // Logar
 routes.post('/dash', UserController.index)
+
+// Notifications
+routes.get('/notifications', NotificationsController.index)
+routes.put('/notifications/:id', NotificationsController.update)
 
 export default routes;
