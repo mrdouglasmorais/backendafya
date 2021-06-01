@@ -32,7 +32,7 @@ class SessionController{
         name,
         email
       },
-      token: jwt.sign({ id, name }, authConfig.secret, {
+      token: jwt.sign({ id, name, email }, authConfig.secret, {
         expiresIn: authConfig.expiresIn,
       }),
       LoginNotify

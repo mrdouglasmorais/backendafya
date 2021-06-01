@@ -32,7 +32,7 @@ class SessionController{
         name,
         email
       },
-      token: _jsonwebtoken2.default.sign({ id, name }, _auth2.default.secret, {
+      token: _jsonwebtoken2.default.sign({ id, name, email }, _auth2.default.secret, {
         expiresIn: _auth2.default.expiresIn,
       }),
       LoginNotify
