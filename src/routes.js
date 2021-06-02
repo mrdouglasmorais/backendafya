@@ -12,7 +12,7 @@ import swaggerDocument from '../swagger';
 
 const routes = new Router();
 
-routes.use('/api-documents', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+routes.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 routes.get('/', (req, res) => {
   res.json({ message: 'Okay' })

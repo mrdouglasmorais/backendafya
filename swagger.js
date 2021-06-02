@@ -6,7 +6,7 @@ export default {
     title: 'API Afya - Backend',
     contact: { email: 'mr.douglasmorais23@gmail.com' },
   },
-  host: 'https://afyabackend-with-node.herokuapp.com/',
+  host: 'afyabackend-with-node.herokuapp.com',
   schemes: [
     'https',
     'http',
