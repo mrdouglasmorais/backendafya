@@ -12,7 +12,7 @@ var _swagger = require('../swagger'); var _swagger2 = _interopRequireDefault(_sw
 
 const routes = new (0, _express.Router)();
 
-routes.use('/api-documents', _swaggeruiexpress2.default.serve, _swaggeruiexpress2.default.setup(_swagger2.default))
+routes.use('/swagger', _swaggeruiexpress2.default.serve, _swaggeruiexpress2.default.setup(_swagger2.default))
 
 routes.get('/', (req, res) => {
   res.json({ message: 'Okay' })

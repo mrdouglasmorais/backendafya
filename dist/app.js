@@ -10,7 +10,7 @@ class App{
   constructor(){
     this.server = _express2.default.call(void 0, );
     this.middleware();
-    this.routes(); 
+    this.routes();
   }
 
   middleware(){
