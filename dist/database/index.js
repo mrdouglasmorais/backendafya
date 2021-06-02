@@ -2,9 +2,10 @@
 var _mongoose = require('mongoose'); var _mongoose2 = _interopRequireDefault(_mongoose);
 
 var _User = require('../app/models/User'); var _User2 = _interopRequireDefault(_User);
+var _Info = require('../app/models/Info'); var _Info2 = _interopRequireDefault(_Info);
 var _database = require('../config/database'); var _database2 = _interopRequireDefault(_database);
 
-const models = [_User2.default]
+const models = [_User2.default, _Info2.default];
 
 class Database{
   constructor(){
