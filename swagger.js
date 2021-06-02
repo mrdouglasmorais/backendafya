@@ -1,12 +1,12 @@
 export default {
   swagger: '2.0',
   info: {
-    description: 'Api AfyaDos',
+    description: 'API Afya - Backend',
     version: '0.0.1',
-    title: 'API AfyaDos',
-    contact: { email: 'afyados@gmail.com' },
+    title: 'API Afya - Backend',
+    contact: { email: 'mr.douglasmorais23@gmail.com' },
   },
-  host: 'localhost:5000/documentation',
+  host: 'https://afyabackend-with-node.herokuapp.com/',
   schemes: [
     'https',
     'http',
