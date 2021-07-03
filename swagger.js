@@ -1,15 +1,14 @@
 module.exports = {
   swagger: '2.0',
   info: {
-    description: 'API Afya - Backend',
+    description: 'API Gama - Backend',
     version: '0.0.1',
-    title: 'API Afya - Backend',
+    title: 'API Gama - Backend',
     contact: { email: 'mr.douglasmorais23@gmail.com' },
   },
-  host: 'afyabackend-with-node.herokuapp.com',
+  host: 'gamabackend-with-node.herokuapp.com/',
   schemes: [
     'https',
-    'http',
   ],
   paths: {
     '/users': {
