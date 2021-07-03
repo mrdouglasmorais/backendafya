@@ -10,10 +10,10 @@
     underscored: true,
     underscoredAll: true,
   },
+  sslmode: "required",
   dialectOptions: {
     ssl: {
-      require: true,
-      rejectUnauthorized: false, // very important
-    }
+      rejectUnauthorized: false,
+    },
   },
 }
