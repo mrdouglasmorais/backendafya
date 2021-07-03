@@ -1,19 +1,19 @@
 module.exports = {
-  dialect: process.env.DATABASE_DIALECT,
-  host: process.env.DATABASE_HOST,
-  username: process.env.DATABASE_USERNAME,
-  password: process.env.DATABASE_PASS,
-  database: process.env.DATABASE_NAME,
+  dialect: process.env.DB_DIALECT,
+  host: process.env.DB_HOST,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
   logging: false,
   define: {
     timestamps: true,
     underscored: true,
     underscoredAll: true,
   },
+  sslmode: "required",
   dialectOptions: {
     ssl: {
-      require: true,
-      rejectUnauthorized: false, // very important
-    }
+      rejectUnauthorized: false,
+    },
   },
 }
