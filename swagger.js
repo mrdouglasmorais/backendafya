@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   swagger: '2.0',
   info: {
     description: 'API Afya - Backend',
